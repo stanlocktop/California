@@ -10,15 +10,16 @@
     display: inline-block;
     margin-left: 5px;
     font-size: 10px;
-    color: #999;
+    color: lightgray;
 }
 
 .nav li a:hover, .nav li a.dropdown-toggle.active {
-    background-color: #DCE5E2;
+    background-color: lightgray;
     color: #fff;
 }
 
 .nav li a:hover span, .nav li a.dropdown-toggle.active span {
+    background-color: lightgray;
     color: #fff;
 }
 

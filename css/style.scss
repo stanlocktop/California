@@ -1,11 +1,11 @@
 @import "reset.css";
 @import "normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap');
-@import "owl.carousel.css";
-@import "owl.theme.default.css";
 @import "bootstrap.css";
 @import "dropdown.css";
 @import "mobile_menu.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap');
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
 
 *{
   margin: 0;
@@ -69,7 +69,7 @@ header {
     nav {
       @include max-screen(429px) {
         position: fixed;
-        z-index: 98;
+        z-index: 99;
       }
 
       ul {
@@ -104,8 +104,8 @@ header {
           @include max-screen(429px) {
             position: relative;
             display: block;
-            -webkit-transition-delay: 0.8s;
-            transition-delay: 0.8s;
+            -webkit-transition-delay: 1s;
+            transition-delay: 1s;
             opacity: 0;
             text-align: center;
             color: $main_color;
@@ -113,7 +113,7 @@ header {
             font-family: $sub_font;
             font-size: 3vh;
             font-weight: 900;
-            line-height: 1.15;
+            line-height: 1.10;
             letter-spacing: 3px;
             -webkit-transform: translate(100px, 0%);
             transform: translate(100px, 0%);
@@ -173,13 +173,13 @@ header {
               @include max-screen(429px) {
                 position: absolute;
                 content: '';
-                top: 50%;
-                margin-top: -2px;
-                left: 50%;
                 width: 0;
                 height: 0;
                 opacity: 0;
-                background-color: #8167a9;
+                top: 50%;
+                margin-top: -2px;
+                left: 50%;
+                background-color: deepskyblue;
                 z-index: 1;
                 -webkit-transition: all 200ms linear;
                 transition: all 200ms linear;
@@ -198,7 +198,15 @@ header {
         }
       }
     }
-
+.hover-target {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
     .icons {
       display: flex;
       align-items: center;
@@ -207,10 +215,25 @@ header {
       li {
         &:last-of-type {
           margin-right: 30px;
+          display: inline-block;
+          text-transform: uppercase;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          color: #000000;
         }
       }
 
       a {
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000000;
+      }
         margin-left: 20px;
         @include max-screen(429px) {
           position: relative;
@@ -222,7 +245,7 @@ header {
       }
     }
   }
-}
+
 
 /*new_phones*/
 

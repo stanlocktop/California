@@ -51,7 +51,7 @@ body{
     transition : all 0.3s ease-out;
 }
 .logo-wrap a span{
-    color: #8167a9;
+    color: deepskyblue;
 }
 .logo-wrap a:hover {
     opacity: 0.9;
@@ -133,10 +133,13 @@ body{
 }
 
 .nav__list {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    z-index: 2;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
 }
 
 body.nav-active .nav__content {
@@ -398,5 +401,6 @@ body.light .switch-wrap p span:nth-child(1):before {
 .link-to-portfolio:hover {
     opacity: 0.8;
     border-radius: 50%;
-    box-shadow: 0 0 0 20px rgba(255,255,255,.1);
+    box-shadow: 0 0 0 20px;
+    color: blue;
 }

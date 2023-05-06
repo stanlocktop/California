@@ -1,11 +1,11 @@
 @import "reset.css";
 @import "normalize.css";
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
-@import "owl.carousel.css";
-@import "owl.theme.default.css";
 @import "bootstrap.css";
 @import "dropdown.css";
 @import "mobile_menu.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
 * {
   margin: 0;
   padding: 0;
@@ -66,7 +66,7 @@ header .container .logo {
 @media screen and (max-width: 429px) {
   header .container nav {
     position: fixed;
-    z-index: 98;
+    z-index: 99;
   }
 }
 header .container nav ul {
@@ -99,8 +99,8 @@ header .container nav ul .nav__list-item.active-nav a:after {
   header .container nav ul li {
     position: relative;
     display: block;
-    -webkit-transition-delay: 0.8s;
-    transition-delay: 0.8s;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
     opacity: 0;
     text-align: center;
     color: #000000;
@@ -108,7 +108,7 @@ header .container nav ul .nav__list-item.active-nav a:after {
     font-family: "Inter", sans-serif;
     font-size: 3vh;
     font-weight: 900;
-    line-height: 1.15;
+    line-height: 1.1;
     letter-spacing: 3px;
     -webkit-transform: translate(100px, 0%);
     transform: translate(100px, 0%);
@@ -170,13 +170,13 @@ header .container nav ul li a {
   header .container nav ul li a:after {
     position: absolute;
     content: "";
-    top: 50%;
-    margin-top: -2px;
-    left: 50%;
     width: 0;
     height: 0;
     opacity: 0;
-    background-color: #8167a9;
+    top: 50%;
+    margin-top: -2px;
+    left: 50%;
+    background-color: deepskyblue;
     z-index: 1;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
@@ -190,25 +190,48 @@ header .container nav ul li a {
     width: 100%;
   }
 }
+header .container .hover-target {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
 header .container .icons {
   display: flex;
   align-items: center;
   margin-bottom: 0;
+  margin-left: 20px;
 }
 header .container .icons li:last-of-type {
   margin-right: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
 }
 header .container .icons a {
-  margin-left: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
 }
 @media screen and (max-width: 429px) {
-  header .container .icons a {
+  header .container .icons {
     position: relative;
     z-index: 99;
   }
 }
 @media screen and (max-width: 321px) {
-  header .container .icons a {
+  header .container .icons {
     margin-left: 10px;
   }
 }
