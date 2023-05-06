@@ -5,13 +5,106 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>California</title>
+    <link rel="icon" type="image/x-icon" href="images/california_logo_mini.svg">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>hello</h1>
-
-<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<header class="cd-header">
+    <div class="header-wrapper container">
+        <a href="#" class="logo" title="logo">
+            <img src="images/logo.svg" alt="logo">
+        </a>
+        <nav class="nav">
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__list-item active-nav"><a href="#" class="hover-target">all products</a></li>
+                    <li class="button-dropdown nav__list-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle hover-target">
+                            Solutions<span><i class="fa-sharp fa-solid fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    Solution #1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Solution #2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Solution #3
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">ABOUT</a></li>
+                    <li class="nav__list-item"><a href="#" class="hover-target">Support</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="icons">
+            <li class="search">
+                <a href="#" title="search">
+                    <img src="images/search.svg" alt="search">
+                </a>
+            </li>
+            <li class="basket">
+                <a href="#" title="basket">
+                    <img src="images/basket.svg">
+                </a>
+            </li>
+        </ul>
+        <div class="nav-but-wrap">
+            <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="section full-height over-hide">
+    <section class="new_phones">
+        <div class="container owl-carousel">
+            <div class="item">
+                <article class="description">
+                    <h1>The new phones are here take a look.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
+                        Faucibus morbi turpis.</p>
+                    <a href="#" title="explore">Explore</a>
+                </article>
+                <img src="images/main_image.png">
+            </div>
+            <div class="item">
+                <article class="description">
+                    <h1>The new phones are here take a look.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
+                        Faucibus morbi turpis.</p>
+                    <a href="#" title="explore">Explore</a>
+                </article>
+                <img src="images/main_image.png">
+            </div>
+            <div class="item">
+                <article class="description">
+                    <h1>The new phones are here take a look.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor.
+                        Faucibus morbi turpis.</p>
+                    <a href="#" title="explore">Explore</a>
+                </article>
+                <img src="images/main_image.png">
+            </div>
+        </div>
+    </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/0d402843db.js" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
