@@ -1704,50 +1704,6 @@ header .container .icons a {
   background: #F8F9FA;
   border-top: solid 1px #DCE5E2;
 }
-@media screen and (max-width: 835px) {
-  .latest_offers .container .tablet footer .container {
-    padding-left: 15px;
-  }
-}
-.latest_offers .container .tablet footer .container .sub_container {
-  border-bottom: solid 1px #DCE5E2;
-}
-@media screen and (max-width: 835px) {
-  .latest_offers .container .tablet footer .container .sub_container .info_logo {
-    display: none;
-  }
-}
-.latest_offers .container .tablet footer .container .sub_container .info_logo img {
-  margin-bottom: 18px;
-}
-.latest_offers .container .tablet footer .container .sub_container .info_logo p {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
-}
-.latest_offers .container .tablet footer .container .sub_container ul li {
-  margin-bottom: 14px;
-}
-.latest_offers .container .tablet footer .container .sub_container ul li:first-of-type {
-  font-family: "Readex Pro", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 28px;
-  color: #000000;
-  margin-bottom: 19px;
-}
-.latest_offers .container .tablet footer .container .sub_container ul li a {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 22px;
-  color: #000000;
-}
 .latest_offers .container .tablet footer .container .links {
   justify-content: space-between;
 }
@@ -1776,6 +1732,290 @@ header .container .icons a {
   color: #000000;
 }
 .latest_offers .container .tablet footer .container .links a:after {
+  position: relative;
+  top: 10px;
+}
+
+/*IDEAS*/
+.ideas {
+  margin-bottom: 75px;
+}
+.ideas .container {
+  margin: auto;
+}
+.ideas .container h3 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  margin-bottom: 9px;
+  text-align: center;
+  color: #000000;
+  margin-top: 47px;
+}
+.ideas .container p {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  padding-left: 100px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 56px;
+}
+.ideas .container .sub_container {
+  margin-bottom: 73px;
+}
+@media screen and (max-width: 835px) {
+  .ideas .container .sub_container {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 429px) {
+  .ideas .container .sub_container img {
+    width: 45vh;
+  }
+}
+.ideas .container .sub_container p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 28px;
+  text-align: left;
+}
+.ideas .container .see_all {
+  text-align: center;
+}
+.ideas .container .see_all a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.ideas .container .see_all a:after {
+  content: url("../images/arrow.svg");
+  position: relative;
+  top: 6px;
+}
+
+/*Search*/
+.search {
+  margin-bottom: 61px;
+}
+.search .container h2 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+.search .container .search_bar {
+  position: relative;
+}
+.search .container .search_bar .input-group-text {
+  background-color: #F8F9FA;
+  border-radius: 100px 0 0 100px;
+}
+.search .container .search_bar input {
+  background: #F8F9FA;
+  border: 1px solid #C5C5C5;
+  border-radius: 0 100px 100px 0;
+  padding-top: 22px;
+  padding-left: 10px;
+  padding-bottom: 22px;
+  border-left: none;
+}
+.search .container .variations {
+  margin: auto;
+}
+.search .container .variations ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.search .container .variations ul li {
+  margin-bottom: 7px;
+  margin-left: 7px;
+}
+.search .container .variations ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+  background: #FFFFFF;
+  border: 1px solid #C5C5C5;
+  border-radius: 200px;
+  padding: 12px 22px;
+  display: inline-block;
+}
+
+/*SIGN UP*/
+.sign_up {
+  margin-bottom: 19px;
+}
+.sign_up .container .sub_container {
+  background: #DCE5E2;
+  border-radius: 16px;
+  margin: auto;
+  text-align: center;
+}
+.sign_up .container .sub_container h3 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+.sign_up .container .sub_container p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}
+.sign_up .container .sub_container img {
+  margin-bottom: 14px;
+}
+.sign_up .container .sub_container form {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 429px) {
+  .sign_up .container .sub_container form {
+    display: block;
+  }
+}
+.sign_up .container .sub_container form input {
+  background: #DCE5E2;
+  border: 1px solid #000000;
+  border-radius: 54px 0px 0px 54px;
+  padding-left: 32px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  height: 50px;
+  width: 285px;
+}
+@media screen and (max-width: 429px) {
+  .sign_up .container .sub_container form input {
+    border-radius: 54px;
+    width: 100%;
+  }
+}
+.sign_up .container .sub_container form button {
+  background: #000000;
+  border-radius: 0px 200px 200px 0px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 16px 33px;
+  border-color: #000000;
+  height: 50px;
+}
+@media screen and (max-width: 429px) {
+  .sign_up .container .sub_container form button {
+    border-radius: 54px;
+    width: 50%;
+  }
+}
+
+/*FOOTER*/
+footer {
+  background: #F8F9FA;
+  border-top: solid 1px #DCE5E2;
+}
+@media screen and (max-width: 835px) {
+  footer .container {
+    padding-left: 15px;
+  }
+}
+footer .container .sub_container {
+  border-bottom: solid 1px #DCE5E2;
+}
+@media screen and (max-width: 835px) {
+  footer .container .sub_container .info_logo {
+    display: none;
+  }
+}
+footer .container .sub_container .info_logo img {
+  margin-bottom: 18px;
+}
+footer .container .sub_container .info_logo p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+footer .container .sub_container ul li {
+  margin-bottom: 14px;
+}
+footer .container .sub_container ul li:first-of-type {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 19px;
+}
+footer .container .sub_container ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #000000;
+}
+footer .container .links {
+  justify-content: space-between;
+}
+@media screen and (max-width: 429px) {
+  footer .container .links {
+    display: none;
+  }
+}
+footer .container .links .webflow {
+  text-align: right;
+}
+footer .container .links span {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+footer .container .links a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+footer .container .links a:after {
+  content: url("../images/arrow.svg");
   position: relative;
   top: 10px;
 }
