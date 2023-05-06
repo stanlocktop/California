@@ -142,7 +142,7 @@ header {
             line-height: 17px;
             text-decoration: none;
             text-transform: uppercase;
-            color: $main_color;
+           //
             margin-left: 40px;
             @include max-screen(769px) {
               margin-left: 20px;
@@ -150,7 +150,7 @@ header {
             @include max-screen(429px) {
               position: relative;
               text-decoration: none;
-              color: $main_color;
+//
               overflow: hidden;
               cursor: pointer;
               padding-left: 5px;
@@ -165,7 +165,7 @@ header {
 
             &:hover {
               @include max-screen(429px) {
-                color: $main_color;
+//
               }
             }
 
@@ -207,11 +207,21 @@ header {
   font-size: 14px;
   color: #000000;
 }
+    .hover-target:hover {
+      -webkit-transform: scale(0.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
     .icons {
       display: flex;
       align-items: center;
       margin-bottom: 0;
 
+.icons:hover {
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
       li {
         &:last-of-type {
           margin-right: 30px;

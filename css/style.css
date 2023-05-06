@@ -136,7 +136,6 @@ header .container nav ul li a {
   line-height: 17px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
   margin-left: 40px;
 }
 @media screen and (max-width: 769px) {
@@ -148,7 +147,6 @@ header .container nav ul li a {
   header .container nav ul li a {
     position: relative;
     text-decoration: none;
-    color: #000000;
     overflow: hidden;
     cursor: pointer;
     padding-left: 5px;
@@ -159,11 +157,6 @@ header .container nav ul li a {
     text-transform: uppercase;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-  }
-}
-@media screen and (max-width: 429px) {
-  header .container nav ul li a:hover {
-    color: #000000;
   }
 }
 @media screen and (max-width: 429px) {
@@ -199,11 +192,21 @@ header .container .hover-target {
   font-size: 14px;
   color: #000000;
 }
+header .container .hover-target:hover {
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 header .container .icons {
   display: flex;
   align-items: center;
   margin-bottom: 0;
   margin-left: 20px;
+}
+header .container .icons .icons:hover {
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 header .container .icons li:last-of-type {
   margin-right: 30px;
