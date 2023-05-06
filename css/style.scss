@@ -924,9 +924,6 @@ header {
 
 .new_phones {
   margin-bottom: 75px;
-  @include max-screen(429px){
-    margin-top: 60px;
-  }
   .container {
     position: relative;
     max-width: 1294px;
@@ -952,12 +949,12 @@ header {
         left: 0;
         width: 50px;
         height: 50px;
-        @include max-screen(429px) {
-          top: 34%;
-        }
         @include max-screen(321px) {
           left: -12px;
           top: 30%;
+        }
+        @include max-screen(429px) {
+          top: 34%;
         }
 
         &:before {
@@ -972,17 +969,12 @@ header {
         top: 44%;
         width: 50px;
         height: 50px;
-
-        @include max-screen(429px) {
-          top: 34%;
-          right: -5px;
-        }
-        @include max-screen(391px) {
-          right: -10px;
-        }
         @include max-screen(321px) {
           right: -12px;
           top: 30%;
+        }
+        @include max-screen(429px) {
+          top: 34%;
         }
 
         &:before {
@@ -1026,11 +1018,11 @@ header {
       justify-content: space-between;
       align-items: center;
       padding-left: 56px;
+      @include max-screen(321px) {
+        padding-left: 25px;
+      }
       @include max-screen(429px) {
         padding-left: 40px;
-      }
-      @include max-screen(321px) {
-        padding-left: 19px;
       }
 
       h1 {
@@ -1084,7 +1076,7 @@ header {
         text-transform: capitalize;
         color: $main_color;
         padding: 14px 53px;
-        border: 1px solid $main_color;
+        border: 1px solid #000000;
         border-radius: 200px;
         display: inline-block;
         @include max-screen(429px) {
@@ -1101,6 +1093,7 @@ header {
         background-color: transparent;
         @include max-screen(429px) {
           width: 50%;
+          height: 120%;
         }
         @include max-screen(321px) {
           width: 52%;
@@ -1118,7 +1111,6 @@ header {
     max-width: 1294px;
     margin: auto;
     h2 {
-      margin: auto;
       margin-bottom: 9px;
       text-align: center;
       font-family: $main_font;
@@ -1127,9 +1119,6 @@ header {
       font-size: 42px;
       line-height: 52px;
       color: $main_color;
-      @include max-screen(429px){
-        width: 85%;
-      }
     }
 
     p {
@@ -1143,9 +1132,6 @@ header {
       max-width: 628px;
       margin: auto;
       margin-bottom: 55px;
-      @include max-screen(429px){
-        width: 85%;
-      }
     }
 
     .sub_container {
@@ -1158,10 +1144,6 @@ header {
         margin-right: 16px;
         @include max-screen(835px) {
           margin-bottom: 30px;
-          padding-left: 35px;
-        }
-        @include max-screen(429px){
-          padding-left: 18px;
         }
 
         .laptops {
@@ -1267,12 +1249,6 @@ header {
       display: flex;
       @include max-screen(835px) {
         justify-content: space-around;
-        padding-left: 14px;
-      }
-      @include max-screen(429px){
-        justify-content: center;
-        margin-left: 5px;
-        margin-right: 15px;
       }
 
       .phones {
@@ -1362,12 +1338,10 @@ header {
 
 /*most_selled*/
 
-.most_selled {
+.most_selled{
   margin-bottom: 78px;
-
-  .container {
+  .container{
     margin: auto;
-
     h3 {
       font-family: $main_font;
       font-style: normal;
@@ -1378,8 +1352,7 @@ header {
       color: $main_color;
       margin-bottom: 9px;
     }
-
-    p {
+    p{
       font-family: $main_font;
       font-style: normal;
       font-weight: 400;
@@ -1387,108 +1360,138 @@ header {
       line-height: 17px;
       text-align: center;
       color: $main_color;
+      margin-bottom: 59px;
     }
-
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      .owl-nav {
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        font-size: 28px;
-        .owl-prev {
-          position: absolute;
-          top: 47%;
-          left: 0;
-          width: 50px;
-          height: 50px;
-          @include max-screen(429px){
-            top: 33%;
+    .row{
+      .cards{
+        display: flex;
+        flex-wrap: wrap;
+        .macbook{
+          img{
+            margin-bottom: 37px;
           }
-          @include max-screen(321px){
-            top: 44%
-          }
-          &:before {
-            content: "\f060";
+          h4{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
             color: $main_color;
+            margin-bottom: 9px;
+          }
+          p{
+            font-family: $sub_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #4B4B4B;
+            margin-bottom: 45px;
+            text-align: left;
+            &:last-of-type{
+              font-size: 18px;
+              line-height: 22px;
+              color: $main_color;
+              margin-bottom: 0;
+            }
           }
         }
-
-        .owl-next {
-          position: absolute;
-          right: 0;
-          top: 47%;
-          width: 50px;
-          height: 50px;
-          @include max-screen(429px){
-            top: 33%
+        .watch_3{
+          img{
+            margin-bottom: 37px;
+            @include max-screen(429px){
+              margin-top: 15px;
+            }
           }
-          @include max-screen(321px){
-            top: 44%
-          }
-          &:before {
+          h4{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
             color: $main_color;
-            content: "\f061";
+            margin-bottom: 9px;
+          }
+          p{
+            font-family: $sub_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #4B4B4B;
+            margin-bottom: 28px;
+            text-align: left;
+            &:last-of-type{
+              font-size: 18px;
+              line-height: 22px;
+              color: $main_color;
+              margin-bottom: 0;
+            }
           }
         }
-      }
-
-      .macbook{
-        p{
-          margin-bottom: 45px;
-          @include max-screen(391px){
-            margin-bottom: 63px;
+        .macbook_air{
+          img{
+            margin-bottom: 37px;
+          }
+          h4{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+            color: $main_color;
+            margin-bottom: 9px;
+          }
+          p{
+            font-family: $sub_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #4B4B4B;
+            margin-bottom: 28px;
+            text-align: left;
+            &:last-of-type{
+              font-size: 18px;
+              line-height: 22px;
+              color: $main_color;
+              margin-bottom: 0;
+            }
           }
         }
-
-      }
-      img {
-        margin-bottom: 37px;
-        @include max-screen(835px) {
-          margin-top: 15px;
+        .ipad{
+          img{
+            margin-bottom: 37px;
+            @include max-screen(429px){
+              margin-top: 15px;
+            }
+          }
+          h4{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+            color: $main_color;
+            margin-bottom: 9px;
+          }
+          p{
+            font-family: $sub_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #4B4B4B;
+            margin-bottom: 28px;
+            text-align: left;
+            &:last-of-type{
+              font-size: 18px;
+              line-height: 22px;
+              color: $main_color;
+              margin-bottom: 0;
+            }
+          }
         }
-      }
-
-      h4 {
-        font-family: $main_font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 28px;
-        color: $main_color;
-        margin-bottom: 9px;
-        @include max-screen(769px){
-          font-size: 18px;
-        }
-        @include max-screen(429px){
-          font-size: 14px;
-        }
-      }
-
-      p {
-        font-family: $sub_font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #4B4B4B;
-        margin-bottom: 28px;
-        text-align: left;
-        @include max-screen(429px){
-          max-width: 320px;
-        }
-        @include max-screen(321px){
-          display: none;
-        }
-      }
-      a{
-        font-family: $sub_font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: $main_color;
-        display: inline-block;
       }
     }
   }
@@ -1523,13 +1526,6 @@ header {
     .cards{
       display: flex;
       flex-wrap: wrap;
-      @include max-screen(835px){
-        padding-left: 25px;
-      }
-      @include max-screen(391px){
-        padding-right: 0;
-        padding-left: 0;
-      }
       article{
         display: block;
         background: #F8F9FA;
@@ -1537,12 +1533,6 @@ header {
         margin-right: 28px;
         padding-top: 41px;
         text-align: center;
-        @include max-screen(361px){
-          width: 100%;
-        }
-        @include max-screen(321px){
-          width: 100%;
-        }
         &:last-of-type{
           @include max-screen(835px){
             margin-top: 15px;
@@ -1556,7 +1546,6 @@ header {
           line-height: 17px;
           text-align: center;
           color: $main_color;
-          margin-bottom: 0;
         }
         h5{
           font-family: $main_font;
@@ -1584,221 +1573,166 @@ header {
           display: inline-block;
         }
         img{
-          @include max-screen(361px){
-            width: 100%;
-          }
           @include max-screen(321px){
             width: 100%;
           }
-
         }
       }
     }
   }
 }
 
-
-/*ideas*/
-
-
-.ideas{
-  margin-bottom: 75px;
+.latest_offers{
+  margin-bottom: 78px;
   .container{
-    margin: auto;
-    h3{
-      font-family: $main_font;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 42px;
-      line-height: 52px;
-      margin-bottom: 9px;
-      text-align: center;
-      color: $main_color;
-    }
-    p{
-      font-family: $main_font;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 13px;
-      line-height: 17px;
-      text-align: center;
-      color: $main_color;
-      margin-bottom: 56px;
-    }
-    .sub_container{
-      margin-bottom: 73px;
-      @include max-screen(835px){
-        margin-bottom: 15px;
-      }
-      img{
-        @include max-screen(429px){
-          width: 45vh;
+    .row{
+      justify-content: center;
+      .main_text{
+        padding-right: 0;
+        padding-left: 0;
+        h2{
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 42px;
+          line-height: 52px;
+          text-align: center;
+          color: $main_color;
+          margin-bottom: 9px;
+        }
+        p{
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          color: $main_color;
+          margin: 0 70px 55px 70px;
         }
       }
-      p{
-        font-family: $sub_font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
-        color: $main_color;
-        margin-bottom: 28px;
-        text-align: left;
-      }
-    }
-    .see_all{
-      text-align: center;
-      a{
-        font-family: $sub_font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 29px;
-        text-transform: capitalize;
-        color: $main_color;
-        &:after{
-          content: url("../images/style_border_radius.svg");
-          position: relative;
-          top: 6px;
+      .laptops{
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        padding: 0 42px;
+        margin-bottom: 92px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        p{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 19px;
+          text-align: right;
+          color: #000000;
+          margin-bottom: 0;
+        }
+        h3{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+          text-align: right;
+          color: #000000;
+          max-width: 192px;
+        }
+        img{
+          width: 100%;
+          height: 100%;
         }
       }
-    }
-  }
-}
+      .watch{
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        display: flex;
 
-        /*search*/
-
-        .search{
-          margin-bottom: 61px;
-          .container{
-            h2{
-              font-family: $main_font;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 42px;
-              line-height: 52px;
-              text-align: center;
-              color: $main_color;
-            }
-            .search_bar{
-              position: relative;
-              .input-group-text{
-                background-color: #F8F9FA;
-                border-radius: 100px 0 0 100px;
-              }
-              input{
-                background: #F8F9FA;
-                border: 1px solid #C5C5C5;
-                border-radius: 0 100px 100px 0;
-                padding-top: 22px;
-                padding-left: 10px;
-                padding-bottom: 22px;
-                border-left: none;
-              }
-            }
-            .variations{
-              margin: auto;
-              ul{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                li{
-                  margin-bottom: 7px;
-                  margin-left: 7px;
-                  a{
-                    font-family: $sub_font;
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 13px;
-                    line-height: 17px;
-                    color: $main_color;
-                    background: $white_color;
-                    border: 1px solid #C5C5C5;
-                    border-radius: 200px;
-                    padding: 12px 22px;
-                    display: inline-block;
-                  }
-                }
-              }
-            }
+          p{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            text-align: right;
+            color: #000000;
+            margin-bottom: 0;
+          }
+          h3{
+            font-family: 'Readex Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: right;
+            color: #000000;
           }
         }
-
-
-        /*sign_up*/
-
-        .sign_up{
-          margin-bottom: 19px;
-          .container{
-            .sub_container{
-              background: #DCE5E2;
-              border-radius: 16px;
-              margin: auto;
-              text-align: center;
-              h3{
-                font-family: $main_font;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 42px;
-                line-height: 52px;
-                text-align: center;
-                color: $main_color;
-              }
-              p{
-                font-family: $sub_font;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 19px;
-                text-align: center;
-                color: $main_color;
-              }
-              img{
-                margin-bottom: 14px;
-              }
-              form{
-                display: flex;
-                justify-content: center;
-                @include max-screen(429px){
-                  display: block;
-                }
-                input{
-                  background: #DCE5E2;
-                  border: 1px solid $main_color;
-                  border-radius: 54px 0px 0px 54px;
-                  padding-left: 32px;
-                  padding-bottom: 16px;
-                  padding-top: 16px;
-                  height: 50px;
-                  width: 285px;
-                  @include max-screen(429px){
-                    border-radius: 54px;
-                    width: 100%;
-                  }
-                }
-                button{
-                  background: $main_color;
-                  border-radius: 0px 200px 200px 0px;
-                  font-family: $sub_font;
-                  font-style: normal;
-                  font-weight: 400;
-                  font-size: 14px;
-                  line-height: 17px;
-                  text-align: center;
-                  color: $white_color;
-                  padding: 16px 33px;
-                  border-color: $main_color;
-                  height: 50px;
-                  @include max-screen(429px){
-                    border-radius: 54px;
-                    width: 50%;
-                  }
-                }
-              }
-            }
-          }
+        img{
+          box-shadow: none;
+          width: 60%;
+          margin-right: 46px;
         }
-/*<FOOTER>*/
+      }
+      .phones{
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        padding: 124px 0 84px 15px;
+        p{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 19px;
+          text-align: center;
+          color: #000000;
+          margin-bottom: 0;
+        }
+        h3{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+          text-align: center;
+          color: #000000;
+
+        }
+        img{
+          box-shadow: none;
+          width: 100%;
+          margin-bottom: 41px;
+        }
+      }
+      .tablet{
+        padding: 84px 0px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        p{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          color: #000000;
+        }
+        h3{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+          text-align: center;
+          color: #000000;
+          margin-bottom: 42px;
+        }
+        img{
+          width: 100%;
+          box-shadow: none;
+        }
+
         footer{
           background: #F8F9FA;
           border-top: solid 1px #DCE5E2;
@@ -1871,7 +1805,7 @@ header {
                 line-height: 22px;
                 color: $main_color;
                 &:after{
-                  content: url("../images/style_border_radius.svg");
+
                   position: relative;
                   top: 10px;
                 }
@@ -1879,7 +1813,7 @@ header {
             }
           }
         }
-
-
-
+      }
+    }
+  }
 
