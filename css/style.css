@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "reset.css";
 @import "normalize.css";
 @import "bootstrap.css";
@@ -59,6 +60,11 @@ header .container .logo {
   position: relative;
   z-index: 99;
 }
+header .container img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 @media screen and (max-width: 429px) {
   header .container nav {
     position: fixed;
@@ -84,6 +90,11 @@ header .container nav ul {
 }
 header .container nav ul .nav__list-item.active-nav a {
   color: #000000;
+}
+header .container nav ul .nav__list-item.active-nav a a:hover img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 header .container nav ul .nav__list-item.active-nav a:after {
   height: 4px;
@@ -212,11 +223,11 @@ header .container .icons a .search_header {
   }
 }
 
-/*new_phones*/
-.new_phones {
+/*The new phones are here take a look.*/
+.the_new_phones {
   margin-bottom: 75px;
 }
-.new_phones .container {
+.the_new_phones .container {
   position: relative;
   max-width: 1294px;
   margin: auto;
@@ -225,21 +236,21 @@ header .container .icons a .search_header {
   padding: 0;
 }
 @media screen and (max-width: 835px) {
-  .new_phones .container {
+  .the_new_phones .container {
     border-radius: 0;
   }
 }
-.new_phones .container .owl-nav {
+.the_new_phones .container .owl-nav {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 28px;
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .owl-nav {
+  .the_new_phones .container .owl-nav {
     font-size: 20px;
   }
 }
-.new_phones .container .owl-nav .owl-prev {
+.the_new_phones .container .owl-nav .owl-prev {
   position: absolute;
   top: 44%;
   left: 0;
@@ -247,21 +258,21 @@ header .container .icons a .search_header {
   height: 50px;
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .owl-nav .owl-prev {
+  .the_new_phones .container .owl-nav .owl-prev {
     left: -12px;
     top: 30%;
   }
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .owl-nav .owl-prev {
+  .the_new_phones .container .owl-nav .owl-prev {
     top: 34%;
   }
 }
-.new_phones .container .owl-nav .owl-prev:before {
+.the_new_phones .container .owl-nav .owl-prev:before {
   content: "\f053";
   color: #000000;
 }
-.new_phones .container .owl-nav .owl-next {
+.the_new_phones .container .owl-nav .owl-next {
   position: absolute;
   right: 0;
   top: 44%;
@@ -269,31 +280,31 @@ header .container .icons a .search_header {
   height: 50px;
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .owl-nav .owl-next {
+  .the_new_phones .container .owl-nav .owl-next {
     right: -12px;
     top: 30%;
   }
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .owl-nav .owl-next {
+  .the_new_phones .container .owl-nav .owl-next {
     top: 34%;
   }
 }
-.new_phones .container .owl-nav .owl-next:before {
+.the_new_phones .container .owl-nav .owl-next:before {
   color: #000000;
   content: "\f054";
 }
-.new_phones .container .owl-dots {
+.the_new_phones .container .owl-dots {
   position: absolute;
   left: 322px;
   bottom: 34px;
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .owl-dots .owl-dot {
+  .the_new_phones .container .owl-dots .owl-dot {
     display: none;
   }
 }
-.new_phones .container .owl-dots .owl-dot span {
+.the_new_phones .container .owl-dots .owl-dot span {
   background: #000000 !important;
   margin-right: 34px;
   width: 194px;
@@ -301,30 +312,30 @@ header .container .icons a .search_header {
   display: inline-block;
 }
 @media screen and (max-width: 835px) {
-  .new_phones .container .owl-dots .owl-dot span {
+  .the_new_phones .container .owl-dots .owl-dot span {
     width: 50px;
   }
 }
-.new_phones .container .owl-dots .owl-dot.active span {
+.the_new_phones .container .owl-dots .owl-dot.active span {
   border: solid 2px white;
 }
-.new_phones .container .item {
+.the_new_phones .container .items {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 56px;
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .item {
+  .the_new_phones .container .items {
     padding-left: 25px;
   }
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .item {
+  .the_new_phones .container .items {
     padding-left: 40px;
   }
 }
-.new_phones .container .item h1 {
+.the_new_phones .container .items h1 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -336,25 +347,25 @@ header .container .icons a .search_header {
   margin-right: 3px;
 }
 @media screen and (max-width: 835px) {
-  .new_phones .container .item h1 {
+  .the_new_phones .container .items h1 {
     font-size: 38px;
     line-height: 40px;
   }
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .item h1 {
+  .the_new_phones .container .items h1 {
     font-size: 28px;
     line-height: 30px;
     margin-bottom: 5px;
   }
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .item h1 {
+  .the_new_phones .container .items h1 {
     font-size: 24px;
     line-height: 30px;
   }
 }
-.new_phones .container .item p {
+.the_new_phones .container .items p {
   max-width: 565px;
   margin-right: 26px;
   margin-bottom: 30px;
@@ -366,11 +377,11 @@ header .container .icons a .search_header {
   color: #000000;
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .item p {
+  .the_new_phones .container .items p {
     display: none;
   }
 }
-.new_phones .container .item a {
+.the_new_phones .container .items a:after {
   width: 170px;
   height: 50px;
   font-family: "Inter", sans-serif;
@@ -384,33 +395,50 @@ header .container .icons a .search_header {
   border: 1px solid #000000;
   border-radius: 200px;
   display: inline-block;
+  opacity: 1;
+}
+.the_new_phones .container .items a:after a:after:hover {
+  width: 170px;
+  height: 50px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #000000;
+  padding: 14px 53px;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  display: inline-block;
+  opacity: 0.6;
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .item a {
+  .the_new_phones .container .items {
     margin-bottom: 10px;
     width: 140px;
     height: 35px;
     padding: 6px 20px 12px 38px;
   }
 }
-.new_phones .container .item img {
+.the_new_phones img {
   width: 51%;
   height: 100%;
   background-color: transparent;
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .item img {
+  .the_new_phones img {
     width: 50%;
     height: 120%;
   }
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .item img {
+  .the_new_phones img {
     width: 52%;
   }
 }
 
-/*latest_offers*/
+/*Shop our latest offers and categories*/
 .latest_offers {
   margin-bottom: 78px;
 }
@@ -448,15 +476,15 @@ header .container .icons a .search_header {
     display: block;
   }
 }
-.latest_offers .container .sub_container .lap_watch {
+.latest_offers .container .sub_container .shop_laptops {
   margin-right: 16px;
 }
 @media screen and (max-width: 835px) {
-  .latest_offers .container .sub_container .lap_watch {
+  .latest_offers .container .sub_container .shop_laptops {
     margin-bottom: 30px;
   }
 }
-.latest_offers .container .sub_container .lap_watch .laptops {
+.latest_offers .container .sub_container .shop_laptops .laptops {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -468,16 +496,16 @@ header .container .icons a .search_header {
   /*box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;*/
 }
 @media screen and (max-width: 835px) {
-  .latest_offers .container .sub_container .lap_watch .laptops {
+  .latest_offers .container .sub_container .shop_laptops .laptops {
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .lap_watch .laptops {
+  .latest_offers .container .sub_container .shop_laptops .laptops {
     padding-right: 10px;
   }
 }
-.latest_offers .container .sub_container .lap_watch .laptops p {
+.latest_offers .container .sub_container .shop_laptops .laptops p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -489,7 +517,7 @@ header .container .icons a .search_header {
   margin-bottom: 0;
   max-width: 60px;
 }
-.latest_offers .container .sub_container .lap_watch .laptops h3 {
+.latest_offers .container .sub_container .shop_laptops .laptops h3 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -500,19 +528,19 @@ header .container .icons a .search_header {
   max-width: 192px;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .lap_watch .laptops h3 {
+  .latest_offers .container .sub_container .shop_laptops .laptops h3 {
     font-size: 22px;
   }
 }
-.latest_offers .container .sub_container .lap_watch .laptops img {
+.latest_offers .container .sub_container .shop_laptops .laptops img {
   margin-right: 55px;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .lap_watch .laptops img {
+  .latest_offers .container .sub_container .shop_laptops .laptops img {
     width: 93%;
   }
 }
-.latest_offers .container .sub_container .watch {
+.latest_offers .container .sub_container .shop_watch {
   display: flex;
   align-items: center;
   padding-right: 42px;
@@ -520,20 +548,20 @@ header .container .icons a .search_header {
   /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;*/
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .watch {
+  .latest_offers .container .sub_container .shop_watch {
     padding-left: 0;
   }
 }
-.latest_offers .container .sub_container .watch img {
+.latest_offers .container .sub_container .shop_watch img {
   margin-right: 46px;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .watch img {
+  .latest_offers .container .sub_container .shop_watch img {
     width: 77%;
     margin-right: 20px;
   }
 }
-.latest_offers .container .sub_container .watch .text p {
+.latest_offers .container .sub_container .shop_watch .text p {
   margin-bottom: 0;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -543,7 +571,7 @@ header .container .icons a .search_header {
   text-align: right;
   color: #000000;
 }
-.latest_offers .container .sub_container .watch .text h3 {
+.latest_offers .container .sub_container .shop_watch .text h3 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -553,25 +581,25 @@ header .container .icons a .search_header {
   color: #000000;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .watch .text h3 {
+  .latest_offers .container .sub_container .shop_watch .text h3 {
     font-size: 18px;
   }
 }
-.latest_offers .container .ph_tablet {
+.latest_offers .container .shop_phones {
   margin-bottom: 22px;
   display: flex;
 }
 @media screen and (max-width: 835px) {
-  .latest_offers .container .ph_tablet {
+  .latest_offers .container .shop_phones {
     justify-content: space-around;
   }
 }
-.latest_offers .container .ph_tablet .phones {
+.latest_offers .container .shop_phones .phones {
   padding: 144px 0 144px 16px;
   margin-right: 16px;
   /*box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;*/
 }
-.latest_offers .container .ph_tablet .phones p {
+.latest_offers .container .shop_phones .phones p {
   margin-bottom: 0;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -581,7 +609,7 @@ header .container .icons a .search_header {
   text-align: center;
   color: #000000;
 }
-.latest_offers .container .ph_tablet .phones h3 {
+.latest_offers .container .shop_phones .phones h3 {
   max-width: 250px;
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
@@ -593,24 +621,24 @@ header .container .icons a .search_header {
   margin: auto;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .ph_tablet .phones h3 {
+  .latest_offers .container .shop_phones .phones h3 {
     font-size: 22px;
   }
 }
-.latest_offers .container .ph_tablet .phones img {
+.latest_offers .container .shop_phones .phones img {
   margin-bottom: 41px;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .ph_tablet .phones img {
+  .latest_offers .container .shop_phones .phones img {
     width: 100%;
   }
 }
-.latest_offers .container .ph_tablet .tablet {
+.latest_offers .container .shop_phones .shop_tablet {
   padding-bottom: 115px;
   padding-top: 114px;
   /*box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;*/
 }
-.latest_offers .container .ph_tablet .tablet p {
+.latest_offers .container .shop_phones .shop_tablet p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -620,7 +648,7 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 0;
 }
-.latest_offers .container .ph_tablet .tablet h3 {
+.latest_offers .container .shop_phones .shop_tablet h3 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -633,17 +661,17 @@ header .container .icons a .search_header {
   max-width: 233px;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .ph_tablet .tablet h3 {
+  .latest_offers .container .shop_phones .shop_tablet h3 {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .ph_tablet .tablet img {
+  .latest_offers .container .shop_phones .shop_tablet img {
     width: 100%;
   }
 }
 
-/*most_selled*/
+/*Save on our most selled items.*/
 .most_selled {
   margin-bottom: 78px;
 }
@@ -702,15 +730,15 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 0;
 }
-.most_selled .container .row .cards .watch_3 img {
+.most_selled .container .row .cards .smart_watch img {
   margin-bottom: 37px;
 }
 @media screen and (max-width: 429px) {
-  .most_selled .container .row .cards .watch_3 img {
+  .most_selled .container .row .cards .smart_watch img {
     margin-top: 15px;
   }
 }
-.most_selled .container .row .cards .watch_3 h4 {
+.most_selled .container .row .cards .smart_watch h4 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -719,7 +747,7 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 9px;
 }
-.most_selled .container .row .cards .watch_3 p {
+.most_selled .container .row .cards .smart_watch p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -729,7 +757,7 @@ header .container .icons a .search_header {
   margin-bottom: 28px;
   text-align: left;
 }
-.most_selled .container .row .cards .watch_3 p:last-of-type {
+.most_selled .container .row .cards .smart_watch p:last-of-type {
   font-size: 18px;
   line-height: 22px;
   color: #000000;
@@ -797,14 +825,14 @@ header .container .icons a .search_header {
   margin-bottom: 0;
 }
 
-/*best_around*/
-.best_around {
+/*See the best around here*/
+.the_best_around {
   margin-bottom: 75px;
 }
-.best_around .container {
+.the_best_around .container {
   margin: auto;
 }
-.best_around .container h3 {
+.the_best_around .container h3 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -814,7 +842,7 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 9px;
 }
-.best_around .container p {
+.the_best_around .container p {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -824,11 +852,11 @@ header .container .icons a .search_header {
   text-align: center;
   margin-bottom: 56px;
 }
-.best_around .container .cards {
+.the_best_around .container .cards {
   display: flex;
   flex-wrap: wrap;
 }
-.best_around .container .cards article {
+.the_best_around .container .cards article {
   display: block;
   background: #F8F9FA;
   border-radius: 16px;
@@ -837,11 +865,11 @@ header .container .icons a .search_header {
   text-align: center;
 }
 @media screen and (max-width: 835px) {
-  .best_around .container .cards article:last-of-type {
+  .the_best_around .container .cards article:last-of-type {
     margin-top: 15px;
   }
 }
-.best_around .container .cards article p {
+.the_best_around .container .cards article p {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -850,7 +878,7 @@ header .container .icons a .search_header {
   text-align: center;
   color: #000000;
 }
-.best_around .container .cards article h5 {
+.the_best_around .container .cards article h5 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -860,7 +888,7 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 30px;
 }
-.best_around .container .cards article a {
+.the_best_around .container .cards article a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -876,16 +904,16 @@ header .container .icons a .search_header {
   display: inline-block;
 }
 @media screen and (max-width: 321px) {
-  .best_around .container .cards article img {
+  .the_best_around .container .cards article img {
     width: 100%;
   }
 }
 
-/*new_phones*/
-.new_phones {
+/*The new phones are here take a look*/
+.the_new_phones {
   margin-bottom: 75px;
 }
-.new_phones .container {
+.the_new_phones .container {
   position: relative;
   max-width: 1294px;
   margin: auto;
@@ -894,21 +922,21 @@ header .container .icons a .search_header {
   padding: 0;
 }
 @media screen and (max-width: 835px) {
-  .new_phones .container {
+  .the_new_phones .container {
     border-radius: 0;
   }
 }
-.new_phones .container .owl-nav {
+.the_new_phones .container .owl-nav {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 28px;
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .owl-nav {
+  .the_new_phones .container .owl-nav {
     font-size: 20px;
   }
 }
-.new_phones .container .owl-nav .owl-prev {
+.the_new_phones .container .owl-nav .owl-prev {
   position: absolute;
   top: 44%;
   left: 0;
@@ -916,21 +944,21 @@ header .container .icons a .search_header {
   height: 50px;
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .owl-nav .owl-prev {
+  .the_new_phones .container .owl-nav .owl-prev {
     left: -12px;
     top: 30%;
   }
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .owl-nav .owl-prev {
+  .the_new_phones .container .owl-nav .owl-prev {
     top: 34%;
   }
 }
-.new_phones .container .owl-nav .owl-prev:before {
+.the_new_phones .container .owl-nav .owl-prev:before {
   content: "\f053";
   color: #000000;
 }
-.new_phones .container .owl-nav .owl-next {
+.the_new_phones .container .owl-nav .owl-next {
   position: absolute;
   right: 0;
   top: 44%;
@@ -938,31 +966,31 @@ header .container .icons a .search_header {
   height: 50px;
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .owl-nav .owl-next {
+  .the_new_phones .container .owl-nav .owl-next {
     right: -12px;
     top: 30%;
   }
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .owl-nav .owl-next {
+  .the_new_phones .container .owl-nav .owl-next {
     top: 34%;
   }
 }
-.new_phones .container .owl-nav .owl-next:before {
+.the_new_phones .container .owl-nav .owl-next:before {
   color: #000000;
   content: "\f054";
 }
-.new_phones .container .owl-dots {
+.the_new_phones .container .owl-dots {
   position: absolute;
   left: 322px;
   bottom: 34px;
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .owl-dots .owl-dot {
+  .the_new_phones .container .owl-dots .owl-dot {
     display: none;
   }
 }
-.new_phones .container .owl-dots .owl-dot span {
+.the_new_phones .container .owl-dots .owl-dot span {
   background: #000000 !important;
   margin-right: 34px;
   width: 194px;
@@ -970,30 +998,30 @@ header .container .icons a .search_header {
   display: inline-block;
 }
 @media screen and (max-width: 835px) {
-  .new_phones .container .owl-dots .owl-dot span {
+  .the_new_phones .container .owl-dots .owl-dot span {
     width: 50px;
   }
 }
-.new_phones .container .owl-dots .owl-dot.active span {
+.the_new_phones .container .owl-dots .owl-dot.active span {
   border: solid 2px white;
 }
-.new_phones .container .item {
+.the_new_phones .container .items {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 56px;
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .item {
+  .the_new_phones .container .items {
     padding-left: 25px;
   }
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .item {
+  .the_new_phones .container .items {
     padding-left: 40px;
   }
 }
-.new_phones .container .item h1 {
+.the_new_phones .container .items h1 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1005,25 +1033,25 @@ header .container .icons a .search_header {
   margin-right: 3px;
 }
 @media screen and (max-width: 835px) {
-  .new_phones .container .item h1 {
+  .the_new_phones .container .items h1 {
     font-size: 38px;
     line-height: 40px;
   }
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .item h1 {
+  .the_new_phones .container .items h1 {
     font-size: 28px;
     line-height: 30px;
     margin-bottom: 5px;
   }
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .item h1 {
+  .the_new_phones .container .items h1 {
     font-size: 24px;
     line-height: 30px;
   }
 }
-.new_phones .container .item p {
+.the_new_phones .container .items p {
   max-width: 565px;
   margin-right: 26px;
   margin-bottom: 30px;
@@ -1035,11 +1063,11 @@ header .container .icons a .search_header {
   color: #000000;
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .item p {
+  .the_new_phones .container .items p {
     display: none;
   }
 }
-.new_phones .container .item a {
+.the_new_phones .container .items a {
   width: 170px;
   height: 50px;
   font-family: "Inter", sans-serif;
@@ -1053,41 +1081,44 @@ header .container .icons a .search_header {
   border: 1px solid #000000;
   border-radius: 200px;
   display: inline-block;
+  cursor: pointer;
+}
+.the_new_phones .container .items a:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .item a {
+  .the_new_phones .container .items {
     margin-bottom: 10px;
     width: 140px;
     height: 35px;
     padding: 6px 20px 12px 38px;
   }
 }
-.new_phones .container .item img {
+.the_new_phones .container img {
   width: 51%;
   height: 100%;
   background-color: transparent;
 }
 @media screen and (max-width: 429px) {
-  .new_phones .container .item img {
+  .the_new_phones .container img {
     width: 50%;
     height: 120%;
   }
 }
 @media screen and (max-width: 321px) {
-  .new_phones .container .item img {
+  .the_new_phones .container img {
     width: 52%;
   }
 }
 
-/*latest_offers*/
-.latest_offers {
-  margin-bottom: 78px;
-}
-.latest_offers .container {
+/*надо потом будет почистить эту хуйню*/
+.container {
   max-width: 1294px;
   margin: auto;
 }
-.latest_offers .container h2 {
+.container h2 {
   margin-bottom: 9px;
   text-align: center;
   font-family: "Readex Pro", sans-serif;
@@ -1097,7 +1128,7 @@ header .container .icons a .search_header {
   line-height: 52px;
   color: #000000;
 }
-.latest_offers .container p {
+.container p {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1109,23 +1140,23 @@ header .container .icons a .search_header {
   margin: auto;
   margin-bottom: 55px;
 }
-.latest_offers .container .sub_container {
+.container .sub_container {
   display: flex;
 }
 @media screen and (max-width: 835px) {
-  .latest_offers .container .sub_container {
+  .container .sub_container {
     display: block;
   }
 }
-.latest_offers .container .sub_container .lap_watch {
+.container .sub_container .shop_laptops {
   margin-right: 16px;
 }
 @media screen and (max-width: 835px) {
-  .latest_offers .container .sub_container .lap_watch {
+  .container .sub_container .shop_laptops {
     margin-bottom: 30px;
   }
 }
-.latest_offers .container .sub_container .lap_watch .laptops {
+.container .sub_container .shop_laptops .laptops {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1137,16 +1168,16 @@ header .container .icons a .search_header {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 @media screen and (max-width: 835px) {
-  .latest_offers .container .sub_container .lap_watch .laptops {
+  .container .sub_container .shop_laptops .laptops {
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .lap_watch .laptops {
+  .container .sub_container .shop_laptops .laptops {
     padding-right: 10px;
   }
 }
-.latest_offers .container .sub_container .lap_watch .laptops p {
+.container .sub_container .shop_laptops .laptops p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1158,7 +1189,12 @@ header .container .icons a .search_header {
   margin-bottom: 0;
   max-width: 60px;
 }
-.latest_offers .container .sub_container .lap_watch .laptops h3 {
+.container .sub_container .shop_laptops .laptops p:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.container .sub_container .shop_laptops .laptops h3 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1168,20 +1204,25 @@ header .container .icons a .search_header {
   color: #000000;
   max-width: 192px;
 }
+.container .sub_container .shop_laptops .laptops h3:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .lap_watch .laptops h3 {
+  .container .sub_container .shop_laptops .laptops {
     font-size: 22px;
   }
 }
-.latest_offers .container .sub_container .lap_watch .laptops img {
+.container .sub_container .shop_laptops .laptops img {
   margin-right: 55px;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .lap_watch .laptops img {
+  .container .sub_container .shop_laptops .laptops img {
     width: 93%;
   }
 }
-.latest_offers .container .sub_container .watch {
+.container .sub_container .shop_watch {
   display: flex;
   align-items: center;
   padding-right: 42px;
@@ -1189,20 +1230,20 @@ header .container .icons a .search_header {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .watch {
+  .container .sub_container .shop_watch {
     padding-left: 0;
   }
 }
-.latest_offers .container .sub_container .watch img {
+.container .sub_container .shop_watch img {
   margin-right: 46px;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .watch img {
+  .container .sub_container .shop_watch img {
     width: 77%;
     margin-right: 20px;
   }
 }
-.latest_offers .container .sub_container .watch .text p {
+.container .sub_container .shop_watch .text p {
   margin-bottom: 0;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -1212,7 +1253,7 @@ header .container .icons a .search_header {
   text-align: right;
   color: #000000;
 }
-.latest_offers .container .sub_container .watch .text h3 {
+.container .sub_container .shop_watch .text h3 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1222,25 +1263,25 @@ header .container .icons a .search_header {
   color: #000000;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .sub_container .watch .text h3 {
+  .container .sub_container .shop_watch .text h3 {
     font-size: 18px;
   }
 }
-.latest_offers .container .ph_tablet {
+.container .shop_phones {
   margin-bottom: 22px;
   display: flex;
 }
 @media screen and (max-width: 835px) {
-  .latest_offers .container .ph_tablet {
+  .container .shop_phones {
     justify-content: space-around;
   }
 }
-.latest_offers .container .ph_tablet .phones {
+.container .shop_phones .phones {
   padding: 144px 0 144px 16px;
   margin-right: 16px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
-.latest_offers .container .ph_tablet .phones p {
+.container .shop_phones .phones p {
   margin-bottom: 0;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -1250,7 +1291,7 @@ header .container .icons a .search_header {
   text-align: center;
   color: #000000;
 }
-.latest_offers .container .ph_tablet .phones h3 {
+.container .shop_phones .phones h3 {
   max-width: 250px;
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
@@ -1262,24 +1303,24 @@ header .container .icons a .search_header {
   margin: auto;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .ph_tablet .phones h3 {
+  .container .shop_phones .phones h3 {
     font-size: 22px;
   }
 }
-.latest_offers .container .ph_tablet .phones img {
+.container .shop_phones .phones img {
   margin-bottom: 41px;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .ph_tablet .phones img {
+  .container .shop_phones .phones img {
     width: 100%;
   }
 }
-.latest_offers .container .ph_tablet .tablet {
+.container .shop_phones .shop_tablet {
   padding-bottom: 115px;
   padding-top: 114px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
-.latest_offers .container .ph_tablet .tablet p {
+.container .shop_phones .shop_tablet p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1289,7 +1330,7 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 0;
 }
-.latest_offers .container .ph_tablet .tablet h3 {
+.container .shop_phones .shop_tablet h3 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1302,12 +1343,12 @@ header .container .icons a .search_header {
   max-width: 233px;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .ph_tablet .tablet h3 {
+  .container .shop_phones .shop_tablet h3 {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .ph_tablet .tablet img {
+  .container .shop_phones .shop_tablet img {
     width: 100%;
   }
 }
@@ -1371,15 +1412,15 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 0;
 }
-.most_selled .container .row .cards .watch_3 img {
+.most_selled .container .row .cards .smart_watch img {
   margin-bottom: 37px;
 }
 @media screen and (max-width: 429px) {
-  .most_selled .container .row .cards .watch_3 img {
+  .most_selled .container .row .cards .smart_watch img {
     margin-top: 15px;
   }
 }
-.most_selled .container .row .cards .watch_3 h4 {
+.most_selled .container .row .cards .smart_watch h4 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1388,7 +1429,7 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 9px;
 }
-.most_selled .container .row .cards .watch_3 p {
+.most_selled .container .row .cards .smart_watch p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1398,7 +1439,7 @@ header .container .icons a .search_header {
   margin-bottom: 28px;
   text-align: left;
 }
-.most_selled .container .row .cards .watch_3 p:last-of-type {
+.most_selled .container .row .cards .smart_watch p:last-of-type {
   font-size: 18px;
   line-height: 22px;
   color: #000000;
@@ -1466,14 +1507,14 @@ header .container .icons a .search_header {
   margin-bottom: 0;
 }
 
-/*best_around*/
-.best_around {
+/*Save on our most selled items.*/
+.the_best_around {
   margin-bottom: 75px;
 }
-.best_around .container {
+.the_best_around .container {
   margin: auto;
 }
-.best_around .container h3 {
+.the_best_around .container h3 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1483,7 +1524,7 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 9px;
 }
-.best_around .container p {
+.the_best_around .container p {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1493,11 +1534,11 @@ header .container .icons a .search_header {
   text-align: center;
   margin-bottom: 56px;
 }
-.best_around .container .cards {
+.the_best_around .container .cards {
   display: flex;
   flex-wrap: wrap;
 }
-.best_around .container .cards article {
+.the_best_around .container .cards article {
   display: block;
   background: #F8F9FA;
   border-radius: 16px;
@@ -1506,11 +1547,11 @@ header .container .icons a .search_header {
   text-align: center;
 }
 @media screen and (max-width: 835px) {
-  .best_around .container .cards article:last-of-type {
+  .the_best_around .container .cards article:last-of-type {
     margin-top: 15px;
   }
 }
-.best_around .container .cards article p {
+.the_best_around .container .cards article p {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1519,7 +1560,7 @@ header .container .icons a .search_header {
   text-align: center;
   color: #000000;
 }
-.best_around .container .cards article h5 {
+.the_best_around .container .cards article h5 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1529,7 +1570,7 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 30px;
 }
-.best_around .container .cards article a {
+.the_best_around .container .cards article a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1545,7 +1586,7 @@ header .container .icons a .search_header {
   display: inline-block;
 }
 @media screen and (max-width: 321px) {
-  .best_around .container .cards article img {
+  .the_best_around .container .cards article img {
     width: 100%;
   }
 }
@@ -1613,12 +1654,12 @@ header .container .icons a .search_header {
   width: 100%;
   height: 100%;
 }
-.latest_offers .container .row .watch {
+.latest_offers .container .row .shop_watch {
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   display: flex;
 }
-.latest_offers .container .row .watch p {
+.latest_offers .container .row .shop_watch p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -1628,7 +1669,7 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 0;
 }
-.latest_offers .container .row .watch h3 {
+.latest_offers .container .row .shop_watch h3 {
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 400;
@@ -1671,12 +1712,12 @@ header .container .icons a .search_header {
   width: 100%;
   margin-bottom: 41px;
 }
-.latest_offers .container .tablet {
+.latest_offers .container .shop_tablet {
   padding: 84px 0px;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-.latest_offers .container .tablet p {
+.latest_offers .container .shop_tablet p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -1685,7 +1726,7 @@ header .container .icons a .search_header {
   text-align: center;
   color: #000000;
 }
-.latest_offers .container .tablet h3 {
+.latest_offers .container .shop_tablet h3 {
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 400;
@@ -1695,26 +1736,26 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 42px;
 }
-.latest_offers .container .tablet img {
+.latest_offers .container .shop_tablet img {
   width: 100%;
   box-shadow: none;
 }
-.latest_offers .container .tablet footer {
+.latest_offers .container .shop_tablet footer {
   background: #F8F9FA;
   border-top: solid 1px #DCE5E2;
 }
-.latest_offers .container .tablet footer .container .links {
+.latest_offers .container .shop_tablet footer .container .links {
   justify-content: space-between;
 }
 @media screen and (max-width: 429px) {
-  .latest_offers .container .tablet footer .container .links {
+  .latest_offers .container .shop_tablet footer .container .links {
     display: none;
   }
 }
-.latest_offers .container .tablet footer .container .links .webflow {
+.latest_offers .container .shop_tablet footer .container .links .webflow {
   text-align: right;
 }
-.latest_offers .container .tablet footer .container .links span {
+.latest_offers .container .shop_tablet footer .container .links span {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1722,7 +1763,7 @@ header .container .icons a .search_header {
   line-height: 22px;
   color: #000000;
 }
-.latest_offers .container .tablet footer .container .links a {
+.latest_offers .container .shop_tablet footer .container .links a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1730,19 +1771,19 @@ header .container .icons a .search_header {
   line-height: 22px;
   color: #000000;
 }
-.latest_offers .container .tablet footer .container .links a:after {
+.latest_offers .container .shop_tablet footer .container .links a:after {
   position: relative;
   top: 10px;
 }
 
-/*IDEAS*/
-.ideas {
+/*Ideas have a place here*/
+.ideas_place {
   margin-bottom: 75px;
 }
-.ideas .container {
+.ideas_place .container {
   margin: auto;
 }
-.ideas .container h3 {
+.ideas_place .container h3 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1753,7 +1794,7 @@ header .container .icons a .search_header {
   color: #000000;
   margin-top: 47px;
 }
-.ideas .container p {
+.ideas_place .container p {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1764,20 +1805,20 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 56px;
 }
-.ideas .container .sub_container {
+.ideas_place .container .sub_container {
   margin-bottom: 73px;
 }
 @media screen and (max-width: 835px) {
-  .ideas .container .sub_container {
+  .ideas_place .container .sub_container {
     margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 429px) {
-  .ideas .container .sub_container img {
+  .ideas_place .container .sub_container img {
     width: 45vh;
   }
 }
-.ideas .container .sub_container p {
+.ideas_place .container .sub_container p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1787,10 +1828,10 @@ header .container .icons a .search_header {
   margin-bottom: 28px;
   text-align: left;
 }
-.ideas .container .see_all {
+.ideas_place .container .see_all {
   text-align: center;
 }
-.ideas .container .see_all a {
+.ideas_place .container .see_all a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1799,17 +1840,17 @@ header .container .icons a .search_header {
   text-transform: capitalize;
   color: #000000;
 }
-.ideas .container .see_all a:after {
+.ideas_place .container .see_all a:after {
   content: url("../images/arrow.svg");
   position: relative;
   top: 6px;
 }
 
-/*Search*/
-.search {
+/*Looking for anything else*/
+.search_keyword {
   margin-bottom: 61px;
 }
-.search .container h2 {
+.search_keyword .container h2 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1818,14 +1859,14 @@ header .container .icons a .search_header {
   text-align: center;
   color: #000000;
 }
-.search .container .search_bar {
+.search_keyword .container .search_bar {
   position: relative;
 }
-.search .container .search_bar .input-group-text {
+.search_keyword .container .search_bar .input-group-text {
   background-color: #F8F9FA;
   border-radius: 100px 0 0 100px;
 }
-.search .container .search_bar input {
+.search_keyword .container .search_bar input {
   background: #F8F9FA;
   border: 1px solid #C5C5C5;
   border-radius: 0 100px 100px 0;
@@ -1834,19 +1875,19 @@ header .container .icons a .search_header {
   padding-bottom: 22px;
   border-left: none;
 }
-.search .container .variations {
+.search_keyword .container .var {
   margin: auto;
 }
-.search .container .variations ul {
+.search_keyword .container .var ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.search .container .variations ul li {
+.search_keyword .container .var ul li {
   margin-bottom: 7px;
   margin-left: 7px;
 }
-.search .container .variations ul li a {
+.search_keyword .container .var ul li a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1860,17 +1901,18 @@ header .container .icons a .search_header {
   display: inline-block;
 }
 
-/*SIGN UP*/
-.sign_up {
+/*Never miss a thing*/
+.never_miss {
   margin-bottom: 19px;
+  /*FOOTER*/
 }
-.sign_up .container .sub_container {
+.never_miss .container .sub_container {
   background: #DCE5E2;
   border-radius: 16px;
   margin: auto;
   text-align: center;
 }
-.sign_up .container .sub_container h3 {
+.never_miss .container .sub_container h3 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1879,7 +1921,7 @@ header .container .icons a .search_header {
   text-align: center;
   color: #000000;
 }
-.sign_up .container .sub_container p {
+.never_miss .container .sub_container p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1888,19 +1930,19 @@ header .container .icons a .search_header {
   text-align: center;
   color: #000000;
 }
-.sign_up .container .sub_container img {
+.never_miss .container .sub_container img {
   margin-bottom: 14px;
 }
-.sign_up .container .sub_container form {
+.never_miss .container .sub_container form {
   display: flex;
   justify-content: center;
 }
 @media screen and (max-width: 429px) {
-  .sign_up .container .sub_container form {
+  .never_miss .container .sub_container form {
     display: block;
   }
 }
-.sign_up .container .sub_container form input {
+.never_miss .container .sub_container form input {
   background: #DCE5E2;
   border: 1px solid #000000;
   border-radius: 54px 0px 0px 54px;
@@ -1911,12 +1953,12 @@ header .container .icons a .search_header {
   width: 285px;
 }
 @media screen and (max-width: 429px) {
-  .sign_up .container .sub_container form input {
+  .never_miss .container .sub_container form input {
     border-radius: 54px;
     width: 100%;
   }
 }
-.sign_up .container .sub_container form button {
+.never_miss .container .sub_container form button {
   background: #000000;
   border-radius: 0px 200px 200px 0px;
   font-family: "Inter", sans-serif;
@@ -1931,34 +1973,32 @@ header .container .icons a .search_header {
   height: 50px;
 }
 @media screen and (max-width: 429px) {
-  .sign_up .container .sub_container form button {
+  .never_miss .container .sub_container form button {
     border-radius: 54px;
     width: 50%;
   }
 }
-
-/*FOOTER*/
-footer {
+.never_miss footer {
   background: #F8F9FA;
   border-top: solid 1px #DCE5E2;
 }
 @media screen and (max-width: 835px) {
-  footer .container {
+  .never_miss footer .container {
     padding-left: 15px;
   }
 }
-footer .container .sub_container {
+.never_miss footer .container .sub_container {
   border-bottom: solid 1px #DCE5E2;
 }
 @media screen and (max-width: 835px) {
-  footer .container .sub_container .info_logo {
+  .never_miss footer .container .sub_container .info_logo {
     display: none;
   }
 }
-footer .container .sub_container .info_logo img {
+.never_miss footer .container .sub_container .info_logo img {
   margin-bottom: 18px;
 }
-footer .container .sub_container .info_logo p {
+.never_miss footer .container .sub_container .info_logo p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1966,11 +2006,11 @@ footer .container .sub_container .info_logo p {
   line-height: 19px;
   color: #000000;
 }
-footer .container .sub_container ul li {
+.never_miss footer .container .sub_container ul li {
   margin-bottom: 14px;
 }
-footer .container .sub_container ul li:first-of-type {
-  font-family: "Readex Pro", sans-serif;
+.never_miss footer .container .sub_container ul li:first-of-type {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -1978,7 +2018,7 @@ footer .container .sub_container ul li:first-of-type {
   color: #000000;
   margin-bottom: 19px;
 }
-footer .container .sub_container ul li a {
+.never_miss footer .container .sub_container ul li a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1986,18 +2026,18 @@ footer .container .sub_container ul li a {
   line-height: 22px;
   color: #000000;
 }
-footer .container .links {
+.never_miss footer .container .links {
   justify-content: space-between;
 }
 @media screen and (max-width: 429px) {
-  footer .container .links {
+  .never_miss footer .container .links {
     display: none;
   }
 }
-footer .container .links .webflow {
+.never_miss footer .container .links .webflow {
   text-align: right;
 }
-footer .container .links span {
+.never_miss footer .container .links span {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2005,7 +2045,7 @@ footer .container .links span {
   line-height: 22px;
   color: #000000;
 }
-footer .container .links a {
+.never_miss footer .container .links a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2013,7 +2053,7 @@ footer .container .links a {
   line-height: 22px;
   color: #000000;
 }
-footer .container .links a:after {
+.never_miss footer .container .links a:after {
   content: url("../images/arrow.svg");
   position: relative;
   top: 10px;

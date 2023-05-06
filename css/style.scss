@@ -24,7 +24,7 @@ $white_color: #FFFFFF;
 }
 
 header {
-  
+
   @include max-screen(835px) {
     margin-bottom: 0;
   }
@@ -64,7 +64,11 @@ header {
       position: relative;
       z-index: 99;
     }
-
+    img:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
     nav {
       @include max-screen(429px) {
         position: fixed;
@@ -89,7 +93,13 @@ header {
         .nav__list-item.active-nav {
           a {
             color: $black_color;
-
+a:hover{
+  img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
             &:after {
               height: 4px;
               opacity: 1;
@@ -227,9 +237,9 @@ header {
   }
 
 
-  /*new_phones*/
+  /*The new phones are here take a look.*/
 
-  .new_phones {
+  .the_new_phones {
     margin-bottom: 75px;
 
     .container {
@@ -321,7 +331,7 @@ header {
         }
       }
 
-      .item {
+      .items {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -373,7 +383,7 @@ header {
           }
         }
 
-        a {
+        a:after {
           width: 170px;
           height: 50px;
           font-family: $basic_font;
@@ -387,13 +397,34 @@ header {
           border: 1px solid #000000;
           border-radius: 200px;
           display: inline-block;
-          @include max-screen(429px) {
-            margin-bottom: 10px;
-            width: 140px;
-            height: 35px;
-            padding: 6px 20px 12px 38px;
+          opacity: 1;
+
+          a:after:hover {
+            width: 170px;
+            height: 50px;
+            font-family: $basic_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: $black_color;
+            padding: 14px 53px;
+            border: 1px solid #000000;
+            border-radius: 200px;
+            display: inline-block;
+            opacity: 0.6;
           }
         }
+
+        @include max-screen(429px) {
+          margin-bottom: 10px;
+          width: 140px;
+          height: 35px;
+          padding: 6px 20px 12px 38px;
+        }
+      }
+    }
 
         img {
           width: 51%;
@@ -408,10 +439,10 @@ header {
           }
         }
       }
-    }
-  }
 
-  /*latest_offers*/
+
+
+  /*Shop our latest offers and categories*/
 
   .latest_offers {
     margin-bottom: 78px;
@@ -450,8 +481,9 @@ header {
           display: block;
         }
 
-        .lap_watch {
+        .shop_laptops {
           margin-right: 16px;
+
           @include max-screen(835px) {
             margin-bottom: 30px;
           }
@@ -509,7 +541,7 @@ header {
           }
         }
 
-        .watch {
+        .shop_watch {
           display: flex;
           align-items: center;
           padding-right: 42px;
@@ -555,7 +587,7 @@ header {
         }
       }
 
-      .ph_tablet {
+      .shop_phones {
         margin-bottom: 22px;
         display: flex;
         @include max-screen(835px) {
@@ -603,7 +635,7 @@ header {
           }
         }
 
-        .tablet {
+        .shop_tablet {
           padding-bottom: 115px;
           padding-top: 114px;
           /*box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;*/
@@ -646,7 +678,7 @@ header {
   }
 
 
-  /*most_selled*/
+  /*Save on our most selled items.*/
 
   .most_selled {
     margin-bottom: 78px;
@@ -715,7 +747,7 @@ header {
             }
           }
 
-          .watch_3 {
+          .smart_watch {
             img {
               margin-bottom: 37px;
               @include max-screen(429px) {
@@ -827,9 +859,9 @@ header {
     }
   }
 
-  /*best_around*/
+  /*See the best around here*/
 
-  .best_around {
+  .the_best_around {
     margin-bottom: 75px;
 
     .container {
@@ -923,9 +955,9 @@ header {
   }
 
 
-/*new_phones*/
+/*The new phones are here take a look*/
 
-.new_phones {
+.the_new_phones {
   margin-bottom: 75px;
   .container {
     position: relative;
@@ -937,6 +969,7 @@ header {
     @include max-screen(835px) {
       border-radius: 0;
     }
+
 
     .owl-nav {
       font-family: "Font Awesome 6 Free";
@@ -1016,7 +1049,7 @@ header {
       }
     }
 
-    .item {
+    .items {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -1082,13 +1115,22 @@ header {
         border: 1px solid #000000;
         border-radius: 200px;
         display: inline-block;
-        @include max-screen(429px) {
-          margin-bottom: 10px;
-          width: 140px;
-          height: 35px;
-          padding: 6px 20px 12px 38px;
-        }
+        cursor: pointer;
       }
+
+      a:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+
+      @include max-screen(429px) {
+        margin-bottom: 10px;
+        width: 140px;
+        height: 35px;
+        padding: 6px 20px 12px 38px;
+      }
+    }
 
       img {
         width: 51%;
@@ -1104,12 +1146,8 @@ header {
       }
     }
   }
-}
+/*надо потом будет почистить эту хуйню*/
 
-/*latest_offers*/
-
-.latest_offers {
-  margin-bottom: 78px;
   .container {
     max-width: 1294px;
     margin: auto;
@@ -1143,7 +1181,7 @@ header {
         display: block;
       }
 
-      .lap_watch {
+      .shop_laptops {
         margin-right: 16px;
         @include max-screen(835px) {
           margin-bottom: 30px;
@@ -1178,6 +1216,11 @@ header {
             margin-bottom: 0;
             max-width: 60px;
           }
+          p:hover{
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+          }
 
           h3 {
             font-family: $main_font;
@@ -1188,10 +1231,17 @@ header {
             text-align: right;
             color: $black_color;
             max-width: 192px;
-            @include max-screen(429px){
-              font-size: 22px;
-            }
           }
+            h3:hover {
+              -webkit-transform: scale(1.2);
+              -ms-transform: scale(1.2);
+              transform: scale(1.2);
+            }
+
+
+        @include  max-screen(429px){
+          font-size: 22px;
+        }
 
           img {
             margin-right: 55px;
@@ -1202,7 +1252,7 @@ header {
         }
       }
 
-      .watch {
+      .shop_watch {
         display: flex;
         align-items: center;
         padding-right: 42px;
@@ -1247,7 +1297,7 @@ header {
       }
     }
 
-    .ph_tablet {
+    .shop_phones {
       margin-bottom: 22px;
       display: flex;
       @include max-screen(835px) {
@@ -1295,7 +1345,7 @@ header {
         }
       }
 
-      .tablet {
+      .shop_tablet {
         padding-bottom: 115px;
         padding-top: 114px;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -1334,7 +1384,7 @@ header {
       }
     }
   }
-}
+
 
 
 
@@ -1399,13 +1449,14 @@ header {
             }
           }
         }
-        .watch_3{
+        .smart_watch{
           img{
             margin-bottom: 37px;
             @include max-screen(429px){
               margin-top: 15px;
             }
           }
+
           h4{
             font-family: $main_font;
             font-style: normal;
@@ -1500,9 +1551,9 @@ header {
   }
 }
 
-/*best_around*/
+/*Save on our most selled items.*/
 
-.best_around{
+.the_best_around{
   margin-bottom: 75px;
   .container{
     margin: auto;
@@ -1586,143 +1637,143 @@ header {
 }
 
 .latest_offers{
-  margin-bottom: 78px;
-  .container{
-    .row{
-      justify-content: center;
-      .main_text{
-        padding-right: 0;
-        padding-left: 0;
-        h2{
-          font-family: $main_font;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 42px;
-          line-height: 52px;
-          text-align: center;
-          color: $black_color;
-          margin-bottom: 9px;
-        }
-        p{
-          font-family: $main_font;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 17px;
-          text-align: center;
-          color: $black_color;
-          margin: 0 70px 55px 70px;
-        }
-      }
-      .laptops{
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        padding: 0 42px;
-        margin-bottom: 92px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        p{
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 15px;
-          line-height: 19px;
-          text-align: right;
-          color: #000000;
-          margin-bottom: 0;
-        }
-        h3{
-          font-family: 'Readex Pro';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 32px;
-          line-height: 38px;
-          text-align: right;
-          color: #000000;
-          max-width: 192px;
-        }
-        img{
-          width: 100%;
-          height: 100%;
-        }
-      }
-      .watch{
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        display: flex;
+            margin-bottom: 78px;
+            .container{
+              .row{
+                justify-content: center;
+                .main_text{
+                  padding-right: 0;
+                  padding-left: 0;
+                  h2{
+                    font-family: $main_font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 42px;
+                    line-height: 52px;
+                    text-align: center;
+                    color: $black_color;
+                    margin-bottom: 9px;
+                  }
+                  p{
+                    font-family: $main_font;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: $black_color;
+                    margin: 0 70px 55px 70px;
+                  }
+                }
+                .laptops{
+                  position: relative;
+                  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                  padding: 0 42px;
+                  margin-bottom: 92px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  p{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 19px;
+                    text-align: right;
+                    color: #000000;
+                    margin-bottom: 0;
+                  }
+                  h3{
+                    font-family: 'Readex Pro';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 38px;
+                    text-align: right;
+                    color: #000000;
+                    max-width: 192px;
+                  }
+                  img{
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .shop_watch{
+                  position: relative;
+                  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                  display: flex;
 
-          p{
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 19px;
-            text-align: right;
-            color: #000000;
-            margin-bottom: 0;
-          }
-          h3{
-            font-family: 'Readex Pro';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 32px;
-            line-height: 38px;
-            text-align: right;
-            color: #000000;
-          }
-        }
-        img{
-          box-shadow: none;
-          width: 60%;
-          margin-right: 46px;
-        }
-      }
-      .phones{
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        padding: 124px 0 84px 15px;
-        p{
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 15px;
-          line-height: 19px;
-          text-align: center;
-          color: #000000;
-          margin-bottom: 0;
-        }
-        h3{
-          font-family: 'Readex Pro';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 32px;
-          line-height: 38px;
-          text-align: center;
-          color: #000000;
+                  p{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 19px;
+                    text-align: right;
+                    color: #000000;
+                    margin-bottom: 0;
+                  }
+                  h3{
+                    font-family: 'Readex Pro';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 38px;
+                    text-align: right;
+                    color: #000000;
+                  }
+                }
+                img{
+                  box-shadow: none;
+                  width: 60%;
+                  margin-right: 46px;
+                }
+              }
+              .phones{
+                position: relative;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                padding: 124px 0 84px 15px;
+                p{
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 15px;
+                  line-height: 19px;
+                  text-align: center;
+                  color: #000000;
+                  margin-bottom: 0;
+                }
+                h3{
+                  font-family: 'Readex Pro';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 32px;
+                  line-height: 38px;
+                  text-align: center;
+                  color: #000000;
 
-        }
-        img{
-          box-shadow: none;
-          width: 100%;
-          margin-bottom: 41px;
-        }
-      }
-      .tablet{
-        padding: 84px 0px;
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        p{
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 19px;
-          text-align: center;
-          color: #000000;
-        }
-        h3{
-          font-family: 'Readex Pro';
+                }
+                img{
+                  box-shadow: none;
+                  width: 100%;
+                  margin-bottom: 41px;
+                }
+              }
+              .shop_tablet{
+                padding: 84px 0px;
+                position: relative;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                p{
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 19px;
+                  text-align: center;
+                  color: #000000;
+                }
+                h3{
+                  font-family: 'Readex Pro';
           font-style: normal;
           font-weight: 400;
           font-size: 32px;
@@ -1775,9 +1826,9 @@ header {
       }
     }
   }
-/*IDEAS*/
+/*Ideas have a place here*/
 
-.ideas{
+.ideas_place{
   margin-bottom: 75px;
   .container{
     margin: auto;
@@ -1843,8 +1894,8 @@ header {
     }
   }
 }
-/*Search*/
-.search{
+/*Looking for anything else*/
+.search_keyword{
   margin-bottom: 61px;
   .container{
     h2{
@@ -1872,7 +1923,7 @@ header {
         border-left: none;
       }
     }
-    .variations{
+    .var{
       margin: auto;
       ul{
         display: flex;
@@ -1900,16 +1951,18 @@ header {
   }
 }
 
-/*SIGN UP*/
-.sign_up{
+/*Never miss a thing*/
+.never_miss {
   margin-bottom: 19px;
-  .container{
-    .sub_container{
+
+  .container {
+    .sub_container {
       background: #DCE5E2;
       border-radius: 16px;
       margin: auto;
       text-align: center;
-      h3{
+
+      h3 {
         font-family: $main_font;
         font-style: normal;
         font-weight: 400;
@@ -1918,7 +1971,8 @@ header {
         text-align: center;
         color: $black_color;
       }
-      p{
+
+      p {
         font-family: $basic_font;
         font-style: normal;
         font-weight: 400;
@@ -1927,16 +1981,19 @@ header {
         text-align: center;
         color: $black_color;
       }
-      img{
+
+      img {
         margin-bottom: 14px;
       }
-      form{
+
+      form {
         display: flex;
         justify-content: center;
-        @include max-screen(429px){
+        @include max-screen(429px) {
           display: block;
         }
-        input{
+
+        input {
           background: #DCE5E2;
           border: 1px solid $black_color;
           border-radius: 54px 0px 0px 54px;
@@ -1945,12 +2002,13 @@ header {
           padding-top: 16px;
           height: 50px;
           width: 285px;
-          @include max-screen(429px){
+          @include max-screen(429px) {
             border-radius: 54px;
             width: 100%;
           }
         }
-        button{
+
+        button {
           background: $black_color;
           border-radius: 0px 200px 200px 0px;
           font-family: $basic_font;
@@ -1963,7 +2021,7 @@ header {
           padding: 16px 33px;
           border-color: $black_color;
           height: 50px;
-          @include max-screen(429px){
+          @include max-screen(429px) {
             border-radius: 54px;
             width: 50%;
           }
@@ -1971,88 +2029,102 @@ header {
       }
     }
   }
-}
 
-/*FOOTER*/
+  /*FOOTER*/
 
-footer{
-  background: #F8F9FA;
-  border-top: solid 1px #DCE5E2;
-  .container{
-    @include max-screen(835px){
-      padding-left: 15px;
-    }
-    .sub_container{
-      border-bottom: solid 1px #DCE5E2;
-      .info_logo{
-        @include max-screen(835px){
-          display: none;
-        }
-        img{
-          margin-bottom: 18px;
-        }
-        p{
-          font-family: $basic_font;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 19px;
-          color: $black_color;
-        }
+  footer {
+    background: #F8F9FA;
+    border-top: solid 1px #DCE5E2;
+
+    .container {
+      @include max-screen(835px) {
+        padding-left: 15px;
       }
-      ul{
-        li{
-          margin-bottom: 14px;
-          &:first-of-type{
-            font-family: $main_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 28px;
-            color: $black_color;
-            margin-bottom: 19px;
+
+      .sub_container {
+        border-bottom: solid 1px #DCE5E2;
+
+        .info_logo {
+          @include max-screen(835px) {
+            display: none;
           }
-          a{
+
+          img {
+            margin-bottom: 18px;
+          }
+
+          p {
             font-family: $basic_font;
             font-style: normal;
             font-weight: 400;
-            font-size: 17px;
-            line-height: 22px;
+            font-size: 16px;
+            line-height: 19px;
             color: $black_color;
           }
         }
+
+        ul {
+          li {
+            margin-bottom: 14px;
+
+            &:first-of-type {
+              font-family: $basic_font;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 22px;
+              line-height: 28px;
+              color: $black_color;
+              margin-bottom: 19px;
+            }
+
+            a {
+              font-family: $basic_font;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 17px;
+              line-height: 22px;
+              color: $black_color;
+            }
+          }
+        }
       }
-    }
-    .links{
-      justify-content: space-between;
-      @include max-screen(429px){
-        display: none;
-      }
-      .webflow{
-        text-align: right;
-      }
-      span{
-        font-family: $main_font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: $black_color;
-      }
-      a{
-        font-family: $basic_font;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: $black_color;
-        &:after{
-          content: url("../images/arrow.svg");
-          position: relative;
-          top: 10px;
+
+      .links {
+        justify-content: space-between;
+        @include max-screen(429px) {
+          display: none;
+        }
+
+        .webflow {
+          text-align: right;
+        }
+
+        span {
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: $black_color;
+        }
+
+        a {
+          font-family: $basic_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: $black_color;
+
+          &:after {
+            content: url("../images/arrow.svg");
+            position: relative;
+            top: 10px;
+          }
         }
       }
     }
   }
 }
+
 
