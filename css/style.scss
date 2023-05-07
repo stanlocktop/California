@@ -1952,18 +1952,18 @@ a:hover{
 }
 
 /*Never miss a thing*/
-.never_miss {
-  margin-bottom: 19px;
-
-  .container {
-    .sub_container {
-      background: #DCE5E2;
+.never_miss{
+  margin-bottom: 20px;
+  .container{
+    .sub_container{
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      background-color: #DCE5E2;
       border-radius: 16px;
-      margin: auto;
-      text-align: center;
 
-      h3 {
-        font-family: $main_font;
+      h1{
+        font-family: $basic_font;
         font-style: normal;
         font-weight: 400;
         font-size: 42px;
@@ -1971,8 +1971,7 @@ a:hover{
         text-align: center;
         color: $black_color;
       }
-
-      p {
+      p{
         font-family: $basic_font;
         font-style: normal;
         font-weight: 400;
@@ -1981,19 +1980,21 @@ a:hover{
         text-align: center;
         color: $black_color;
       }
-
-      img {
+      .img{
         margin-bottom: 14px;
       }
-
-      form {
+      form{
         display: flex;
+        align-items: center;
         justify-content: center;
-        @include max-screen(429px) {
+        padding-bottom: 45px;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        @include max-screen(429px){
           display: block;
         }
-
-        input {
+        input{
           background: #DCE5E2;
           border: 1px solid $black_color;
           border-radius: 54px 0px 0px 54px;
@@ -2002,13 +2003,12 @@ a:hover{
           padding-top: 16px;
           height: 50px;
           width: 285px;
-          @include max-screen(429px) {
+          @include max-screen(429px){
             border-radius: 54px;
             width: 100%;
           }
         }
-
-        button {
+        button{
           background: $black_color;
           border-radius: 0px 200px 200px 0px;
           font-family: $basic_font;
@@ -2021,7 +2021,7 @@ a:hover{
           padding: 16px 33px;
           border-color: $black_color;
           height: 50px;
-          @include max-screen(429px) {
+          @include max-screen(429px){
             border-radius: 54px;
             width: 50%;
           }
@@ -2029,98 +2029,87 @@ a:hover{
       }
     }
   }
+}
 
-  /*FOOTER*/
 
-  footer {
-    background: #F8F9FA;
-    border-top: solid 1px #DCE5E2;
+/*footer*/
 
-    .container {
-      @include max-screen(835px) {
-        padding-left: 15px;
-      }
 
-      .sub_container {
-        border-bottom: solid 1px #DCE5E2;
-
-        .info_logo {
-          @include max-screen(835px) {
-            display: none;
-          }
-
-          img {
-            margin-bottom: 18px;
-          }
-
-          p {
-            font-family: $basic_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: $black_color;
-          }
-        }
-
-        ul {
-          li {
-            margin-bottom: 14px;
-
-            &:first-of-type {
-              font-family: $basic_font;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 22px;
-              line-height: 28px;
-              color: $black_color;
-              margin-bottom: 19px;
-            }
-
-            a {
-              font-family: $basic_font;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 17px;
-              line-height: 22px;
-              color: $black_color;
-            }
-          }
-        }
-      }
-
-      .links {
-        justify-content: space-between;
-        @include max-screen(429px) {
+footer{
+  background: #F8F9FA;
+  border-top: solid 1px #DCE5E2;
+  .container{
+    @include max-screen(835px){
+      padding-left: 15px;
+    }
+    .sub_container{
+      border-bottom: solid 1px #DCE5E2;
+      .info_logo{
+        @include max-screen(835px){
           display: none;
         }
-
-        .webflow {
-          text-align: right;
+        img{
+          margin-bottom: 18px;
         }
-
-        span {
-          font-family: $main_font;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 22px;
-          color: $black_color;
-        }
-
-        a {
+        p{
           font-family: $basic_font;
           font-style: normal;
           font-weight: 400;
-          font-size: 18px;
-          line-height: 22px;
+          font-size: 16px;
+          line-height: 19px;
           color: $black_color;
-
-          &:after {
-            content: url("../images/arrow.svg");
-            position: relative;
-            top: 10px;
+        }
+      }
+      ul{
+        li{
+          margin-bottom: 14px;
+          &:first-of-type{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+            color: $black_color;
+            margin-bottom: 19px;
           }
+          a{
+            font-family: $basic_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            color: $black_color;
+          }
+        }
+      }
+    }
+    .links{
+      justify-content: space-between;
+      @include max-screen(429px){
+        display: none;
+      }
+      .webflow{
+        text-align: right;
+      }
+      span{
+        font-family: $basic_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $black_color;
+      }
+      a{
+        font-family: $basic_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $black_color;
+        &:after{
+          content: url("../images/arrow.svg");
+          position: relative;
+          top: 10px;
         }
       }
     }

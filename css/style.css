@@ -1903,17 +1903,17 @@ header .container .icons a .search_header {
 
 /*Never miss a thing*/
 .never_miss {
-  margin-bottom: 19px;
-  /*FOOTER*/
+  margin-bottom: 20px;
 }
 .never_miss .container .sub_container {
-  background: #DCE5E2;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  background-color: #DCE5E2;
   border-radius: 16px;
-  margin: auto;
-  text-align: center;
 }
-.never_miss .container .sub_container h3 {
-  font-family: "Readex Pro", sans-serif;
+.never_miss .container .sub_container h1 {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 42px;
@@ -1930,12 +1930,17 @@ header .container .icons a .search_header {
   text-align: center;
   color: #000000;
 }
-.never_miss .container .sub_container img {
+.never_miss .container .sub_container .img {
   margin-bottom: 14px;
 }
 .never_miss .container .sub_container form {
   display: flex;
+  align-items: center;
   justify-content: center;
+  padding-bottom: 45px;
+  position: relative;
+  align-items: center;
+  text-align: center;
 }
 @media screen and (max-width: 429px) {
   .never_miss .container .sub_container form {
@@ -1978,27 +1983,29 @@ header .container .icons a .search_header {
     width: 50%;
   }
 }
-.never_miss footer {
+
+/*footer*/
+footer {
   background: #F8F9FA;
   border-top: solid 1px #DCE5E2;
 }
 @media screen and (max-width: 835px) {
-  .never_miss footer .container {
+  footer .container {
     padding-left: 15px;
   }
 }
-.never_miss footer .container .sub_container {
+footer .container .sub_container {
   border-bottom: solid 1px #DCE5E2;
 }
 @media screen and (max-width: 835px) {
-  .never_miss footer .container .sub_container .info_logo {
+  footer .container .sub_container .info_logo {
     display: none;
   }
 }
-.never_miss footer .container .sub_container .info_logo img {
+footer .container .sub_container .info_logo img {
   margin-bottom: 18px;
 }
-.never_miss footer .container .sub_container .info_logo p {
+footer .container .sub_container .info_logo p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2006,11 +2013,11 @@ header .container .icons a .search_header {
   line-height: 19px;
   color: #000000;
 }
-.never_miss footer .container .sub_container ul li {
+footer .container .sub_container ul li {
   margin-bottom: 14px;
 }
-.never_miss footer .container .sub_container ul li:first-of-type {
-  font-family: "Inter", sans-serif;
+footer .container .sub_container ul li:first-of-type {
+  font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -2018,7 +2025,7 @@ header .container .icons a .search_header {
   color: #000000;
   margin-bottom: 19px;
 }
-.never_miss footer .container .sub_container ul li a {
+footer .container .sub_container ul li a {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2026,26 +2033,18 @@ header .container .icons a .search_header {
   line-height: 22px;
   color: #000000;
 }
-.never_miss footer .container .links {
+footer .container .links {
   justify-content: space-between;
 }
 @media screen and (max-width: 429px) {
-  .never_miss footer .container .links {
+  footer .container .links {
     display: none;
   }
 }
-.never_miss footer .container .links .webflow {
+footer .container .links .webflow {
   text-align: right;
 }
-.never_miss footer .container .links span {
-  font-family: "Readex Pro", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #000000;
-}
-.never_miss footer .container .links a {
+footer .container .links span {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2053,7 +2052,15 @@ header .container .icons a .search_header {
   line-height: 22px;
   color: #000000;
 }
-.never_miss footer .container .links a:after {
+footer .container .links a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+footer .container .links a:after {
   content: url("../images/arrow.svg");
   position: relative;
   top: 10px;

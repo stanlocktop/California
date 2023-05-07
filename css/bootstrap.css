@@ -2155,7 +2155,7 @@ textarea.form-control {
   height: auto;
 }
 
-.form_group {
+.form-group {
   margin-bottom: 1rem;
 }
 
@@ -2461,7 +2461,7 @@ textarea.form-control {
     justify-content: center;
     margin-bottom: 0;
   }
-  .form-inline .form_group {
+  .form-inline .form-group {
     display: -ms-flexbox;
     display: flex;
     -ms-flex: 0 0 auto;
@@ -4260,7 +4260,7 @@ input[type="button"].btn-block {
   }
 }
 
-.navigation {
+.nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
